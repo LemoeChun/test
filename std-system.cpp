@@ -1,7 +1,7 @@
 #include <cstdlib>
 #include <iostream>
 #include <ostream>
-int main(){
-    int result = std::system("g++ std-system.cpp");
-    std::cout << result << std::endl;
+int main(const int argc, const char** argv){
+    int result = std::system(argv[1]);
+    std::cout << "result = "<< result << std::endl;
 }
