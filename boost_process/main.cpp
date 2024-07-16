@@ -8,6 +8,7 @@
 #include <string>
 #include <unistd.h>
 #include <vector>
+#include <filesystem>
 
 namespace process=boost::process;
 
@@ -22,6 +23,7 @@ int main(const int argc,const char* argv[]){
 //        command.push_back(argv[i]);
     }
 //    std::cout << command << std::endl;
+    std::filesystem::current_path(std::filesystem::path(".."));
     boost::process::ipstream pipe_stream;
     boost::process::child cmd(command, boost::process::std_out > pipe_stream);
 
