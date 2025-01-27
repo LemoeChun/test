@@ -1,0 +1,7 @@
+[bot]
+ws_uri= "baka1"
+token= "baka2"
+
+[ai]
+api_uri= "baka3"
+key= "baka4"
