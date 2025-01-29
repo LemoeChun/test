@@ -1,4 +1,5 @@
 #include <iostream>
+#include <ostream>
 #include <sstream>
 #include <string>
 #include <print>
@@ -20,5 +21,10 @@ int main(){
             b.push_back(line);
         }
         for (auto i : b){ std::cout << i << "\n"; }
-        }
+
+        string::size_type n;
+        n = a.find(' ');
+        std::cout << "在位置" << n << "找到 \' \'， substr(" << n+1 << ") =" << a.substr(n+1) << std::endl;
+    }
+
 }
