@@ -1,4 +1,5 @@
 *.out
 testdb
 *.o
+*.so
 gcm.cache
