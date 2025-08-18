@@ -1,0 +1,1 @@
+/usr/local/bin/c++ -Wl,--dependency-file=CMakeFiles/my_application.dir/link.d CMakeFiles/my_application.dir/src/main.cpp.o "CMakeFiles/my_application.dir/slint_generated_app-window_1.cpp.o" -o my_application   -L/home/lemoechun/code/test/slint-cpp-template-main/_deps/slint-build  -Wl,-rpath,/home/lemoechun/code/test/slint-cpp-template-main/_deps/slint-build -lslint_cpp

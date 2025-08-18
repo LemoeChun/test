@@ -1,0 +1,610 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 6.16.0 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/local/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/lemoechun/code/test/slint-cpp-template-main/CMakeFiles/3.31.6/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/lemoechun/code/test/slint-cpp-template-main/CMakeFiles/CMakeScratch/TryCompile-aKkcIl"
+      binary: "/home/lemoechun/code/test/slint-cpp-template-main/CMakeFiles/CMakeScratch/TryCompile-aKkcIl"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lemoechun/code/test/slint-cpp-template-main/CMakeFiles/CMakeScratch/TryCompile-aKkcIl'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_12903/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_12903.dir/build.make CMakeFiles/cmTC_12903.dir/build
+        gmake[1]: Entering directory '/home/lemoechun/code/test/slint-cpp-template-main/CMakeFiles/CMakeScratch/TryCompile-aKkcIl'
+        Building CXX object CMakeFiles/cmTC_12903.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/local/bin/c++   -v -o CMakeFiles/cmTC_12903.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/local/bin/c++
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../configure --enable-languages=c,c++,rust --disable-multilib
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 16.0.0 20250716 (experimental) (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_12903.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_12903.dir/'
+         /usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_12903.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/cciNlpn7.s
+        GNU C++17 (GCC) version 16.0.0 20250716 (experimental) (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 16.0.0 20250716 (experimental), GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../include/c++/16.0.0
+         /usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../include/c++/16.0.0/x86_64-pc-linux-gnu
+         /usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../include/c++/16.0.0/backward
+         /usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/include
+         /usr/local/include
+         /usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/include-fixed
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 527910401c39a47656e8f608210b54ae
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_12903.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_12903.dir/'
+         as -v --64 -o CMakeFiles/cmTC_12903.dir/CMakeCXXCompilerABI.cpp.o /tmp/cciNlpn7.s
+        GNU assembler version 2.45 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.45
+        COMPILER_PATH=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/:/usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/:/usr/local/libexec/gcc/x86_64-pc-linux-gnu/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_12903.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_12903.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_12903
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12903.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/local/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../configure --enable-languages=c,c++,rust --disable-multilib
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 16.0.0 20250716 (experimental) (GCC) 
+        COMPILER_PATH=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/:/usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/:/usr/local/libexec/gcc/x86_64-pc-linux-gnu/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_12903' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_12903.'
+         /usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/collect2 -plugin /usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/liblto_plugin.so -plugin-opt=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc34N7lp.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_12903 /lib/x86_64-linux-gnu/crt1.o /lib/x86_64-linux-gnu/crti.o /usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/crtbegin.o -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0 -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_12903.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/crtend.o /lib/x86_64-linux-gnu/crtn.o
+        collect2 version 16.0.0 20250716 (experimental)
+        /usr/bin/ld -plugin /usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/liblto_plugin.so -plugin-opt=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc34N7lp.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_12903 /lib/x86_64-linux-gnu/crt1.o /lib/x86_64-linux-gnu/crti.o /usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/crtbegin.o -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0 -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_12903.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/crtend.o /lib/x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Debian) 2.45
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_12903' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_12903.'
+        /usr/local/bin/c++  -v -Wl,-v CMakeFiles/cmTC_12903.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_12903
+        gmake[1]: Leaving directory '/home/lemoechun/code/test/slint-cpp-template-main/CMakeFiles/CMakeScratch/TryCompile-aKkcIl'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../include/c++/16.0.0]
+          add: [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../include/c++/16.0.0/x86_64-pc-linux-gnu]
+          add: [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../include/c++/16.0.0/backward]
+          add: [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/include]
+          add: [/usr/local/include]
+          add: [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/include-fixed]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../include/c++/16.0.0] ==> [/usr/local/include/c++/16.0.0]
+        collapse include dir [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../include/c++/16.0.0/x86_64-pc-linux-gnu] ==> [/usr/local/include/c++/16.0.0/x86_64-pc-linux-gnu]
+        collapse include dir [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../include/c++/16.0.0/backward] ==> [/usr/local/include/c++/16.0.0/backward]
+        collapse include dir [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/include] ==> [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/include-fixed] ==> [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/include-fixed]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/local/include/c++/16.0.0;/usr/local/include/c++/16.0.0/x86_64-pc-linux-gnu;/usr/local/include/c++/16.0.0/backward;/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/include;/usr/local/include;/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/include-fixed;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/lemoechun/code/test/slint-cpp-template-main/CMakeFiles/CMakeScratch/TryCompile-aKkcIl']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_12903/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_12903.dir/build.make CMakeFiles/cmTC_12903.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/lemoechun/code/test/slint-cpp-template-main/CMakeFiles/CMakeScratch/TryCompile-aKkcIl']
+        ignore line: [Building CXX object CMakeFiles/cmTC_12903.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/local/bin/c++   -v -o CMakeFiles/cmTC_12903.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/local/bin/c++]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../configure --enable-languages=c c++ rust --disable-multilib]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 16.0.0 20250716 (experimental) (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_12903.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_12903.dir/']
+        ignore line: [ /usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_12903.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/cciNlpn7.s]
+        ignore line: [GNU C++17 (GCC) version 16.0.0 20250716 (experimental) (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 16.0.0 20250716 (experimental)  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../include/c++/16.0.0]
+        ignore line: [ /usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../include/c++/16.0.0/x86_64-pc-linux-gnu]
+        ignore line: [ /usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../include/c++/16.0.0/backward]
+        ignore line: [ /usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/include-fixed]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 527910401c39a47656e8f608210b54ae]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_12903.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_12903.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_12903.dir/CMakeCXXCompilerABI.cpp.o /tmp/cciNlpn7.s]
+        ignore line: [GNU assembler version 2.45 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.45]
+        ignore line: [COMPILER_PATH=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/:/usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/:/usr/local/libexec/gcc/x86_64-pc-linux-gnu/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_12903.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_12903.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_12903]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12903.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/local/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../configure --enable-languages=c c++ rust --disable-multilib]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 16.0.0 20250716 (experimental) (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/:/usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/:/usr/local/libexec/gcc/x86_64-pc-linux-gnu/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_12903' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_12903.']
+        link line: [ /usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/collect2 -plugin /usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/liblto_plugin.so -plugin-opt=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc34N7lp.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_12903 /lib/x86_64-linux-gnu/crt1.o /lib/x86_64-linux-gnu/crti.o /usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/crtbegin.o -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0 -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_12903.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/crtend.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc34N7lp.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_12903] ==> ignore
+          arg [/lib/x86_64-linux-gnu/crt1.o] ==> obj [/lib/x86_64-linux-gnu/crt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/crtbegin.o] ==> obj [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/crtbegin.o]
+          arg [-L/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0] ==> dir [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0]
+          arg [-L/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../lib64] ==> dir [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../..] ==> dir [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../..]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_12903.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/crtend.o] ==> obj [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/crtend.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 16.0.0 20250716 (experimental)]
+        ignore line: [/usr/bin/ld -plugin /usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/liblto_plugin.so -plugin-opt=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc34N7lp.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_12903 /lib/x86_64-linux-gnu/crt1.o /lib/x86_64-linux-gnu/crti.o /usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/crtbegin.o -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0 -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_12903.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/crtend.o /lib/x86_64-linux-gnu/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse library dir [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0] ==> [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0]
+        collapse library dir [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../lib64] ==> [/usr/local/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../..] ==> [/usr/local/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/lib/x86_64-linux-gnu/crt1.o;/lib/x86_64-linux-gnu/crti.o;/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/crtbegin.o;/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/crtend.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0;/usr/local/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib64;/usr/local/lib;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Debian) 2.45
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "_deps/slint-src/api/cpp/CMakeLists.txt:7 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/local/bin/gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/lemoechun/code/test/slint-cpp-template-main/CMakeFiles/3.31.6/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "_deps/slint-src/api/cpp/CMakeLists.txt:7 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/lemoechun/code/test/slint-cpp-template-main/CMakeFiles/CMakeScratch/TryCompile-yX0Q37"
+      binary: "/home/lemoechun/code/test/slint-cpp-template-main/CMakeFiles/CMakeScratch/TryCompile-yX0Q37"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lemoechun/code/test/slint-cpp-template-main/CMakeFiles/CMakeScratch/TryCompile-yX0Q37'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_dfb86/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_dfb86.dir/build.make CMakeFiles/cmTC_dfb86.dir/build
+        gmake[1]: Entering directory '/home/lemoechun/code/test/slint-cpp-template-main/CMakeFiles/CMakeScratch/TryCompile-yX0Q37'
+        Building C object CMakeFiles/cmTC_dfb86.dir/CMakeCCompilerABI.c.o
+        /usr/local/bin/gcc   -v -o CMakeFiles/cmTC_dfb86.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/local/bin/gcc
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../configure --enable-languages=c,c++,rust --disable-multilib
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 16.0.0 20250716 (experimental) (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dfb86.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_dfb86.dir/'
+         /usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_dfb86.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccjzpgd6.s
+        GNU C23 (GCC) version 16.0.0 20250716 (experimental) (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 16.0.0 20250716 (experimental), GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/include
+         /usr/local/include
+         /usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/include-fixed
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 652e2a80b6eb6e973850734215ba29ab
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dfb86.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_dfb86.dir/'
+         as -v --64 -o CMakeFiles/cmTC_dfb86.dir/CMakeCCompilerABI.c.o /tmp/ccjzpgd6.s
+        GNU assembler version 2.45 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.45
+        COMPILER_PATH=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/:/usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/:/usr/local/libexec/gcc/x86_64-pc-linux-gnu/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dfb86.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_dfb86.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_dfb86
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dfb86.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/local/bin/gcc
+        COLLECT_LTO_WRAPPER=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../configure --enable-languages=c,c++,rust --disable-multilib
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 16.0.0 20250716 (experimental) (GCC) 
+        COMPILER_PATH=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/:/usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/:/usr/local/libexec/gcc/x86_64-pc-linux-gnu/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_dfb86' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_dfb86.'
+         /usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/collect2 -plugin /usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/liblto_plugin.so -plugin-opt=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccbRY8m0.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_dfb86 /lib/x86_64-linux-gnu/crt1.o /lib/x86_64-linux-gnu/crti.o /usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/crtbegin.o -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0 -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_dfb86.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/crtend.o /lib/x86_64-linux-gnu/crtn.o
+        collect2 version 16.0.0 20250716 (experimental)
+        /usr/bin/ld -plugin /usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/liblto_plugin.so -plugin-opt=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccbRY8m0.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_dfb86 /lib/x86_64-linux-gnu/crt1.o /lib/x86_64-linux-gnu/crti.o /usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/crtbegin.o -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0 -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_dfb86.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/crtend.o /lib/x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Debian) 2.45
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_dfb86' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_dfb86.'
+        /usr/local/bin/gcc  -v -Wl,-v CMakeFiles/cmTC_dfb86.dir/CMakeCCompilerABI.c.o -o cmTC_dfb86
+        gmake[1]: Leaving directory '/home/lemoechun/code/test/slint-cpp-template-main/CMakeFiles/CMakeScratch/TryCompile-yX0Q37'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "_deps/slint-src/api/cpp/CMakeLists.txt:7 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/include]
+          add: [/usr/local/include]
+          add: [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/include-fixed]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/include] ==> [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/include-fixed] ==> [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/include-fixed]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/include;/usr/local/include;/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/include-fixed;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "_deps/slint-src/api/cpp/CMakeLists.txt:7 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/lemoechun/code/test/slint-cpp-template-main/CMakeFiles/CMakeScratch/TryCompile-yX0Q37']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_dfb86/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_dfb86.dir/build.make CMakeFiles/cmTC_dfb86.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/lemoechun/code/test/slint-cpp-template-main/CMakeFiles/CMakeScratch/TryCompile-yX0Q37']
+        ignore line: [Building C object CMakeFiles/cmTC_dfb86.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/local/bin/gcc   -v -o CMakeFiles/cmTC_dfb86.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/local/bin/gcc]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../configure --enable-languages=c c++ rust --disable-multilib]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 16.0.0 20250716 (experimental) (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dfb86.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_dfb86.dir/']
+        ignore line: [ /usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_dfb86.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccjzpgd6.s]
+        ignore line: [GNU C23 (GCC) version 16.0.0 20250716 (experimental) (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 16.0.0 20250716 (experimental)  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/include-fixed]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 652e2a80b6eb6e973850734215ba29ab]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dfb86.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_dfb86.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_dfb86.dir/CMakeCCompilerABI.c.o /tmp/ccjzpgd6.s]
+        ignore line: [GNU assembler version 2.45 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.45]
+        ignore line: [COMPILER_PATH=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/:/usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/:/usr/local/libexec/gcc/x86_64-pc-linux-gnu/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dfb86.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_dfb86.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_dfb86]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dfb86.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/local/bin/gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../configure --enable-languages=c c++ rust --disable-multilib]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 16.0.0 20250716 (experimental) (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/:/usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/:/usr/local/libexec/gcc/x86_64-pc-linux-gnu/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_dfb86' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_dfb86.']
+        link line: [ /usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/collect2 -plugin /usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/liblto_plugin.so -plugin-opt=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccbRY8m0.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_dfb86 /lib/x86_64-linux-gnu/crt1.o /lib/x86_64-linux-gnu/crti.o /usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/crtbegin.o -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0 -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_dfb86.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/crtend.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccbRY8m0.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_dfb86] ==> ignore
+          arg [/lib/x86_64-linux-gnu/crt1.o] ==> obj [/lib/x86_64-linux-gnu/crt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/crtbegin.o] ==> obj [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/crtbegin.o]
+          arg [-L/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0] ==> dir [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0]
+          arg [-L/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../lib64] ==> dir [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../..] ==> dir [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../..]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_dfb86.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/crtend.o] ==> obj [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/crtend.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 16.0.0 20250716 (experimental)]
+        ignore line: [/usr/bin/ld -plugin /usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/liblto_plugin.so -plugin-opt=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/16.0.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccbRY8m0.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_dfb86 /lib/x86_64-linux-gnu/crt1.o /lib/x86_64-linux-gnu/crti.o /usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/crtbegin.o -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0 -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_dfb86.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/crtend.o /lib/x86_64-linux-gnu/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse library dir [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0] ==> [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0]
+        collapse library dir [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../../../lib64] ==> [/usr/local/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/../../..] ==> [/usr/local/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/lib/x86_64-linux-gnu/crt1.o;/lib/x86_64-linux-gnu/crti.o;/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/crtbegin.o;/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0/crtend.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/local/lib/gcc/x86_64-pc-linux-gnu/16.0.0;/usr/local/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib64;/usr/local/lib;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "_deps/slint-src/api/cpp/CMakeLists.txt:7 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Debian) 2.45
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.31/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6Dependencies.cmake:34 (_qt_internal_find_third_party_dependencies)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6Config.cmake:155 (include)"
+      - "_deps/slint-src/api/cpp/CMakeLists.txt:238 (find_package)"
+    directories:
+      source: "/home/lemoechun/code/test/slint-cpp-template-main/CMakeFiles/CMakeScratch/TryCompile-9eH1AJ"
+      binary: "/home/lemoechun/code/test/slint-cpp-template-main/CMakeFiles/CMakeScratch/TryCompile-9eH1AJ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lemoechun/code/test/slint-cpp-template-main/_deps/corrosion-src/cmake;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lemoechun/code/test/slint-cpp-template-main/CMakeFiles/CMakeScratch/TryCompile-9eH1AJ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f19ab/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f19ab.dir/build.make CMakeFiles/cmTC_f19ab.dir/build
+        gmake[1]: 进入目录“/home/lemoechun/code/test/slint-cpp-template-main/CMakeFiles/CMakeScratch/TryCompile-9eH1AJ”
+        Building C object CMakeFiles/cmTC_f19ab.dir/src.c.o
+        /usr/local/bin/gcc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_f19ab.dir/src.c.o -c /home/lemoechun/code/test/slint-cpp-template-main/CMakeFiles/CMakeScratch/TryCompile-9eH1AJ/src.c
+        Linking C executable cmTC_f19ab
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f19ab.dir/link.txt --verbose=1
+        /usr/local/bin/gcc CMakeFiles/cmTC_f19ab.dir/src.c.o -o cmTC_f19ab
+        gmake[1]: 离开目录“/home/lemoechun/code/test/slint-cpp-template-main/CMakeFiles/CMakeScratch/TryCompile-9eH1AJ”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/Qt6/FindWrapAtomic.cmake:36 (check_cxx_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreDependencies.cmake:35 (_qt_internal_find_third_party_dependencies)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfig.cmake:55 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6Config.cmake:200 (find_package)"
+      - "_deps/slint-src/api/cpp/CMakeLists.txt:238 (find_package)"
+    checks:
+      - "Performing Test HAVE_STDATOMIC"
+    directories:
+      source: "/home/lemoechun/code/test/slint-cpp-template-main/CMakeFiles/CMakeScratch/TryCompile-vhoMuz"
+      binary: "/home/lemoechun/code/test/slint-cpp-template-main/CMakeFiles/CMakeScratch/TryCompile-vhoMuz"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lemoechun/code/test/slint-cpp-template-main/_deps/corrosion-src/cmake;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "HAVE_STDATOMIC"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lemoechun/code/test/slint-cpp-template-main/CMakeFiles/CMakeScratch/TryCompile-vhoMuz'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0410d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0410d.dir/build.make CMakeFiles/cmTC_0410d.dir/build
+        gmake[1]: 进入目录“/home/lemoechun/code/test/slint-cpp-template-main/CMakeFiles/CMakeScratch/TryCompile-vhoMuz”
+        Building CXX object CMakeFiles/cmTC_0410d.dir/src.cxx.o
+        /usr/local/bin/c++ -DHAVE_STDATOMIC   -o CMakeFiles/cmTC_0410d.dir/src.cxx.o -c /home/lemoechun/code/test/slint-cpp-template-main/CMakeFiles/CMakeScratch/TryCompile-vhoMuz/src.cxx
+        Linking CXX executable cmTC_0410d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0410d.dir/link.txt --verbose=1
+        /usr/local/bin/c++ CMakeFiles/cmTC_0410d.dir/src.cxx.o -o cmTC_0410d
+        gmake[1]: 离开目录“/home/lemoechun/code/test/slint-cpp-template-main/CMakeFiles/CMakeScratch/TryCompile-vhoMuz”
+        
+      exitCode: 0
+...
